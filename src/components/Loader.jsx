@@ -14,8 +14,8 @@ const Wrapper = styled.div`
 `;
 
 const Load = styled.div`
-  border: 6px solid #282a36;
-  border-top: 6px solid #337AB8;
+  border: 6px solid #F8BBD3;
+  border-top: 6px solid #C2185B;
   border-radius: 50%;
   width: 36px;
   height: 36px;

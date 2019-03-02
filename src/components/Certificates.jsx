@@ -1,12 +1,15 @@
 import React from 'react';
+import H2Element from '../styled/H2Element';
+import H3Element from '../styled/H3Element';
+import ParamElement from '../styled/ParamElement';
 
 const Certificates = props => (
   <div className="Certificates">
-    <h2>Certificates</h2>
+    <H2Element name="Certificates" />
     {props.data.map((cert, index) => (
       <div className='Certificates-item' key={`Certificates-${index}`}>
-        <h3>{cert.name} @ {cert.institution} <span>{cert.date}</span></h3>
-        <p>{cert.description}</p>
+        <H3Element>{cert.name} @ {cert.institution} <span>{cert.date}</span></H3Element>
+        <ParamElement content={cert.description} />
       </div>
     ))}
   </div>

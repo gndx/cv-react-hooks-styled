@@ -10,7 +10,6 @@ import Experience from '../components/Experience';
 import Certificates from '../components/Certificates';
 import Skills from '../components/Skills';
 import Loader from '../components/Loader';
-import ContactForm from '../components/ContactForm';
 const API = 'https://us-central1-gndx-cv.cloudfunctions.net/me';
 
 const GlobalStyle = createGlobalStyle`
@@ -40,7 +39,6 @@ const App = () => {
         />
       </Sidebar>
       <Info>
-        <ContactForm />
         <Education data={data.education} />
         <Experience data={data.experience} />
         <Certificates data={data.certificate} />
